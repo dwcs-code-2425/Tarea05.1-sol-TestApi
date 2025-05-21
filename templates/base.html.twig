@@ -11,7 +11,9 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body>
+    <body class="container">
+        
+        	{% include "common/_messages.html.twig" %}
         {% block body %}{% endblock %}
     </body>
 </html>
